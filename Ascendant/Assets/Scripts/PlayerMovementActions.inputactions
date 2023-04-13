@@ -175,6 +175,17 @@
                 },
                 {
                     "name": "",
+                    "id": "c03262e6-98a8-4ad3-84f4-66f0ad93ef82",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8cf4add8-7b01-4424-8842-293484d55942",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
