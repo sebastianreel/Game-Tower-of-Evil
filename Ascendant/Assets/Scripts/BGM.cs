@@ -1,7 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Antonio Massa
+ * Updated 4/14/2023
+ */
 using UnityEngine;
-using UnityEngine.Timeline;
 
 public class BGM : MonoBehaviour
 {
