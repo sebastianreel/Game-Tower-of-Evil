@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float mouseSensitivity = 100.0f;
     [SerializeField]
+    private float horizontalCompensation = 0.01f;
+    [SerializeField]
     private Camera mCamera;
     #endregion
 
@@ -86,7 +88,7 @@ public class PlayerController : MonoBehaviour
     private void rotatePlayer()
     {
         rotationInput = PA.Player.Look.ReadValue<Vector2>();
-        transform.Rotate(0f, rotationInput.x, 0f);
+        transform.Rotate(0f, rotationInput.x * mouseSensitivity * horizontalCompensation , 0f);
         if(Mathf.Abs(rotationInput.y) > 0.1f)
         {
             verticalRotation -= rotationInput.y * mouseSensitivity * Time.deltaTime;
