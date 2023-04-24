@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 public class EndGame : MonoBehaviour
 {
     void OnTriggerEnter(Collider other){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("EndLevel");
     }
 
 }
