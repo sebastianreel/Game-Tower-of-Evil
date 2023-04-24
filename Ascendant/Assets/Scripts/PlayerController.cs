@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour
     PlayerMovementActions PA;
     [SerializeField]
     CharacterController CC;
-    //[SerializeField]
-    //PauseMenu PM;
+    [SerializeField]
+    PauseManager PM;
     [SerializeField]
     private float gravityMultiplier = 1;
     [SerializeField]
@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseManager.paused) return;
         applyGravity();
         rotatePlayer();
         movePlayer();
@@ -70,6 +71,7 @@ public class PlayerController : MonoBehaviour
     #region Event Listener Functions
     private void Jump_performed(InputAction.CallbackContext obj)
     {
+        if (PauseManager.paused) return;
         if (!CC.isGrounded && numJumps > 0) return;
         else
         {
@@ -80,7 +82,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start_performed(InputAction.CallbackContext obj)
     {
-        throw new System.NotImplementedException();
+        PM.determinePause();
     }
     #endregion
 
