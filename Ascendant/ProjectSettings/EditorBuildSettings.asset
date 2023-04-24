@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TonyTestScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/LevelOne.unity
+    guid: 16a8b1929426da043a51f5ed7631d7bd
+  - enabled: 1
     path: Assets/Scenes/EndLevel.unity
     guid: 4fee0227d2b44c94ca27966c8d5f2d8f
   m_configObjects: {}
