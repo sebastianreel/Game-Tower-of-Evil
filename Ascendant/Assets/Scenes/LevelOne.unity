@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731715, g: 0.13414735, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1785,6 +1785,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6124410298967254901, guid: 1e016f2a6abdd32488d5f0d42ce7957d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6358853314919779992, guid: 1e016f2a6abdd32488d5f0d42ce7957d,
         type: 3}
       propertyPath: m_RootOrder
@@ -3411,6 +3416,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThinPlatform (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3268207888964314394, guid: 767f56b9a43312445abb26ff9fccd2ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 767f56b9a43312445abb26ff9fccd2ce, type: 3}
 --- !u!1 &824413594
@@ -3818,6 +3828,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ThinPlatform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268207888964314394, guid: 767f56b9a43312445abb26ff9fccd2ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 767f56b9a43312445abb26ff9fccd2ce, type: 3}
@@ -6566,6 +6581,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ThinPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268207888964314394, guid: 767f56b9a43312445abb26ff9fccd2ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 767f56b9a43312445abb26ff9fccd2ce, type: 3}
