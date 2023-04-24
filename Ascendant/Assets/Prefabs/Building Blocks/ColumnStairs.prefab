@@ -94,6 +94,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6499529959314878404, guid: 94b237b489af9924394416bc68f42c2c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 589928367305001432, guid: 94b237b489af9924394416bc68f42c2c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -103,6 +108,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ColumnStairs_V2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2029857476372711698, guid: 94b237b489af9924394416bc68f42c2c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4752888626103974999, guid: 94b237b489af9924394416bc68f42c2c,
         type: 3}

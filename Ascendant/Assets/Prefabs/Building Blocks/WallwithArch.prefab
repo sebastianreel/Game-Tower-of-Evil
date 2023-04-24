@@ -104,6 +104,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBetweenColumnsArch
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2b9e807b21547d84582f71e08f7ed689,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9e807b21547d84582f71e08f7ed689, type: 3}
 --- !u!1 &5119757746311406175 stripped
