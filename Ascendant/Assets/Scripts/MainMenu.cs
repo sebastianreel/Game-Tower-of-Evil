@@ -124,6 +124,7 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(delay);
         optionsMenu.SetActive(true);
         mainMenu.SetActive(false);
+        optionsBackButton.Select();
     }
 
     IEnumerator contolsButtonDelay()
@@ -131,6 +132,7 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(delay);
         controlsMenu.SetActive(true);
         mainMenu.SetActive(false);
+        controlsBackButton.Select();
     }
 
     IEnumerator creditsButtonDelay()
@@ -138,6 +140,7 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(delay);
         creditsMenu.SetActive(true);
         mainMenu.SetActive(false);
+        creditsBackBackButton.Select();
     }
 
     IEnumerator optionsBackButtonDelay()
@@ -145,6 +148,7 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(delay);
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
+        optionsButton.Select();
     }
 
     IEnumerator controlsBackButtonDelay()
@@ -152,6 +156,7 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(delay);
         mainMenu.SetActive(true);
         controlsMenu.SetActive(false);
+        controlsButton.Select();
     }
 
     IEnumerator creditsBackButtonDelay()
@@ -159,6 +164,7 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(delay);
         mainMenu.SetActive(true);
         creditsMenu.SetActive(false);
+        creditsButton.Select();
     }
     #endregion
 }

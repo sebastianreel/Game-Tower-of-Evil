@@ -48,6 +48,7 @@ public class PauseManager : MonoBehaviour
     {
         creditsMenu.SetActive(false);
         pauseMenu.SetActive(true);
+        controls.Select();
     }
 
     private void quitButtonClicked()
@@ -59,6 +60,7 @@ public class PauseManager : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         creditsMenu.SetActive(true);
+        back.Select();
     }
 
     private void mainMenuButtonClicked()
@@ -79,6 +81,7 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 0;
         paused = true;
         AudioListener.pause = true;
+        resume.Select();
     }
 
     private void resumeGame()
