@@ -36,6 +36,9 @@ public class MainMenu : MonoBehaviour
         optionsButton.onClick.AddListener(optionsButtonClicked);
         controlsButton.onClick.AddListener(controlsButtonClicked);
         creditsButton.onClick.AddListener(creditsButtonClicked);
+        optionsBackButton.onClick.AddListener(optionsBackButtonClicked);
+        controlsButton.onClick.AddListener(controlsBackButtonClicked);
+        creditsBackBackButton.onClick.AddListener(creditsBackButtonClicked);
         quitButton.onClick.AddListener(quitGame);
     }
  
@@ -45,6 +48,9 @@ public class MainMenu : MonoBehaviour
         optionsButton.onClick.RemoveListener(optionsButtonClicked);
         controlsButton.onClick.RemoveListener(controlsButtonClicked);
         creditsButton.onClick.RemoveListener(creditsButtonClicked);
+        optionsBackButton.onClick.RemoveListener(optionsBackButtonClicked);
+        controlsBackButton.onClick.RemoveListener(controlsBackButtonClicked);
+        creditsBackBackButton.onClick.RemoveListener(creditsBackButtonClicked);
         quitButton?.onClick.RemoveListener(quitGame);
 
     }

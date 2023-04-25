@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float mouseSensitivity = 100.0f;
     [SerializeField]
-    private float horizontalCompensation = 0.01f;
+    private float horizontalCompensation = 1.0f;
     [SerializeField]
     private Camera mCamera;
     #endregion

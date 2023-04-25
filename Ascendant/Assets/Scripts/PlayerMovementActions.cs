@@ -230,6 +230,17 @@ public partial class @PlayerMovementActions: IInputActionCollection2, IDisposabl
                 },
                 {
                     ""name"": """",
+                    ""id"": ""0ac932d0-9ff2-4f0c-b44b-b1a21ffdaf9e"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Start"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""ef6b28cf-049f-41f4-af21-05bbf8d8cdcd"",
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
