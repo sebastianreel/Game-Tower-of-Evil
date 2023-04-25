@@ -37,7 +37,7 @@ public class MainMenu : MonoBehaviour
         controlsButton.onClick.AddListener(controlsButtonClicked);
         creditsButton.onClick.AddListener(creditsButtonClicked);
         optionsBackButton.onClick.AddListener(optionsBackButtonClicked);
-        controlsButton.onClick.AddListener(controlsBackButtonClicked);
+        controlsBackButton.onClick.AddListener(controlsBackButtonClicked);
         creditsBackBackButton.onClick.AddListener(creditsBackButtonClicked);
         quitButton.onClick.AddListener(quitGame);
     }
