@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float horizontalCompensation = 1.0f;
     [SerializeField]
+    private int maxJumps = 2;
+    [SerializeField]
     private Camera mCamera;
     #endregion
 
@@ -72,11 +74,11 @@ public class PlayerController : MonoBehaviour
     private void Jump_performed(InputAction.CallbackContext obj)
     {
         if (PauseManager.paused) return;
-        if (!CC.isGrounded && numJumps > 0) return;
+        if (numJumps == maxJumps) return;
         else
         {
             numJumps ++;
-            velocity = jumpPower;
+            velocity += jumpPower;
         }
     }
 

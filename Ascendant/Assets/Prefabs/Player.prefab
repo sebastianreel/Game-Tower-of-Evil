@@ -132,12 +132,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CC: {fileID: 0}
+  PM: {fileID: 0}
   gravityMultiplier: 1
   speed: 20
-  jumpPower: 2.5
+  jumpPower: 3.5
   velocity: 0
   mouseSensitivity: 75
   horizontalCompensation: 0.002
+  maxJumps: 2
   mCamera: {fileID: 8199369906888337916}
 --- !u!1 &8199369906888337906
 GameObject:
