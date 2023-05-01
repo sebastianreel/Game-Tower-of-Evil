@@ -9,6 +9,7 @@ using UnityEngine.AI;
 
 public class EnemyRef : MonoBehaviour
 {
+    public int damage;
     public NavMeshAgent navMeshagent;
     public PlayerHealth playerHealth;
     [Header("Stats")]
@@ -20,7 +21,7 @@ public class EnemyRef : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision){
         if(collision.gameObject.tag == "Player"){
-            playerHealth.TakeDamage(20);
+            playerHealth.TakeDamage(damage);
         }
     }
 }
