@@ -8,10 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 878807b8bd5eff14aa77e1efe74df779
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 58f8459cb97a29347a200d8339e43b7b
   - enabled: 0
     path: Assets/Scenes/TonyTestScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/LevelOneFromSeb.unity
+    guid: 321bf6ef254ccc6479c096979dc3d791
+  - enabled: 0
     path: Assets/Scenes/LevelOne.unity
     guid: 16a8b1929426da043a51f5ed7631d7bd
   - enabled: 1

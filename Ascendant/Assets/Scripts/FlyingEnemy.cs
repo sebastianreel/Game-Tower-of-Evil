@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+/*
+Sebastian Reel
+CS 328 - Game Desgin
+*/
+
 public class FlyingEnemy : MonoBehaviour
 {
     public float speed;
