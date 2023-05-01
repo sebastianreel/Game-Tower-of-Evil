@@ -15,8 +15,13 @@ public class FlyingEnemy : MonoBehaviour
     public Transform startingPoint;
     private GameObject player;
     public Transform target;
-    
-    
+
+    public int damage;
+    public PlayerHealth playerHealth;
+    private int time = 500;
+
+
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -35,6 +40,8 @@ public class FlyingEnemy : MonoBehaviour
         {
             ReturnStartPoint();
         }
+        time = time - 1;
+
         LookatPlayer();
     }
 
@@ -53,6 +60,15 @@ public class FlyingEnemy : MonoBehaviour
         Vector3 look = target.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(look);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 0.3f);
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag == "Player" && time <= 0)
+        {
+            playerHealth.TakeDamage(damage);
+            time = 500;
+        }
     }
 
 }
