@@ -51,15 +51,16 @@ public class MainMenu : MonoBehaviour
         optionsBackButton.onClick.RemoveListener(optionsBackButtonClicked);
         controlsBackButton.onClick.RemoveListener(controlsBackButtonClicked);
         creditsBackBackButton.onClick.RemoveListener(creditsBackButtonClicked);
-        quitButton?.onClick.RemoveListener(quitGame);
+        quitButton.onClick.RemoveAllListeners();
 
     }
     #endregion
 
     #region Other Functions
 
-    public void quitGame()
+    private void quitGame()
     {
+        Debug.Log("Quit Button Works!");
         Application.Quit();
     }
 
