@@ -13,6 +13,6 @@ public class NextLevel : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("LevelOneFromSeb");
+        SceneManager.LoadScene("LevelOne");
     }
 }
