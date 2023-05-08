@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class SpikeTrap : MonoBehaviour
 {
+    public TriggerSpike triggerSpike;
+    public Transform startingPoint;
+    
     [Header ("Patrol Points")]
-    [SerializeField] private Transform leftEdge;
-    [SerializeField] private Transform rightEdge;
+    [SerializeField] private Transform top;
+    [SerializeField] private Transform bot;
 
     [Header ("Enemy")]
     [SerializeField] private Transform enemy;
@@ -19,24 +22,25 @@ public class SpikeTrap : MonoBehaviour
     public int damage;
     public PlayerHealth playerHealth;
     private int time = 500;
+    private bool trigger;
 
     private void Awake(){
         initScale = enemy.localScale;
     }
     
     private void Update(){
-        if (movingLeft){
-            if (enemy.position.y <= leftEdge.position.y)
-                MoveInDirection(1);
-            else
-                DirectionChange();
+        trigger = triggerSpike.triggerSpike();
+
+        if (trigger == true)
+        {
+            if (!movingLeft){
+                if (enemy.position.y <= top.position.y)
+                    MoveInDirection(1);
+            }
+        }else{
+            ReturnStartPoint();
         }
-        else{
-            if (enemy.position.y >= rightEdge.position.y)
-                MoveInDirection(-1);
-            else
-                DirectionChange();
-        }
+        
 
         time = time - 1;
         Debug.Log (time);
@@ -53,11 +57,16 @@ public class SpikeTrap : MonoBehaviour
 
         enemy.position = new Vector3(enemy.position.x, enemy.position.y + Time.deltaTime * _direction * speed, enemy.position.z);
 
+
     }
     private void OnTriggerEnter(Collider collision){
         if(collision.tag == "Player" && time <= 0){
             playerHealth.TakeDamage(damage);
             time = 500;
         }
+    }
+    private void ReturnStartPoint()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, startingPoint.position, speed * Time.deltaTime);
     }
 }
