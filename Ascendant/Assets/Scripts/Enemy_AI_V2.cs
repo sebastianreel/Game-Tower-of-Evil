@@ -15,6 +15,7 @@ public class Enemy_AI_V2 : MonoBehaviour
     private float attackDistance;
     private float pathUpdateDeadline;
     private bool inRange = false;
+    private PlayerHealth health;
     #endregion
 
     #region Serialized variable
@@ -99,6 +100,10 @@ public class Enemy_AI_V2 : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("Attacking", true);
+        }
+        if(reference!= null)
+        {
+            health.TakeDamage(reference.damage);
         }
         attackTime = 0.0f;
     }
