@@ -1,6 +1,8 @@
 /*
  * Keegan Graf
  * Updated 4/23/2023
+ * Antonio Massa
+ * Updated 05/08/2023
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -10,8 +12,9 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     public Transform target;
-
+    public NavMeshAgent agent;
     private EnemyRef enemyRef;
+    public Animator ani;
 
     private float pathUpdateDeadline;
 
@@ -25,17 +28,27 @@ public class EnemyAI : MonoBehaviour
         AttackDistance = enemyRef.navMeshagent.stoppingDistance;
     }
 
-    void Update(){
-        if(target != null){
+    void Update()
+    {
+        if (target != null)
+        {
 
             bool inRange = Vector3.Distance(transform.position, target.position) <= AttackDistance;
 
-            if(inRange){
+            if (inRange)
+            {
                 TargetLock();
+                ani.SetBool("Walking", false);
             }
-            else{
+            else
+            {
                 UpdatePath();
+                ani.SetBool("Walking", true);
             }
+        }
+        else
+        {
+            ani.SetBool("Walking", false);
         }
     }
 

@@ -19,6 +19,7 @@ public class EnemyRef : MonoBehaviour
     private void Awake(){
         navMeshagent = GetComponent<NavMeshAgent>();
     }
+
     private void OnCollisionEnter(Collision collision){
         if(collision.gameObject.tag == "Player"){
             playerHealth.TakeDamage(damage);
