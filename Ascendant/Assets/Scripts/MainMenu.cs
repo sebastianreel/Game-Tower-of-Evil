@@ -60,7 +60,6 @@ public class MainMenu : MonoBehaviour
 
     private void quitGame()
     {
-        Debug.Log("Quit Button Works!");
         Application.Quit();
     }
 
