@@ -4760,6 +4760,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: f5039084b96f6f2439f0a0fac6a7df61, type: 3}
     volume: 0.5
     pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Wind
+    clip: {fileID: 8300000, guid: 22339a0cdb7c1394d9209f5f3124d831, type: 3}
+    volume: 0.134
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!1001 &446555193
 PrefabInstance:

@@ -23,6 +23,7 @@ public class TriggerSpike : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision){
         if (collision.tag == "Player"){
+            FindObjectOfType<AudioManager>().Play("spike_trap");
             trigger = true;
         }
     }

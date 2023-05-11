@@ -33,7 +33,6 @@ public class SpikeTrap : MonoBehaviour
 
         if (trigger == true)
         {
-            FindObjectOfType<AudioManager>().Play("spike_trap");
             if (!movingLeft){
                 if (enemy.position.y <= top.position.y)
                     MoveInDirection(1);
