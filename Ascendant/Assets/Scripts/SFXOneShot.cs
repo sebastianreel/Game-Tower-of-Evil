@@ -17,6 +17,7 @@ public class SFXOneShot : MonoBehaviour
             source.PlayOneShot(clip);
         }
     }
+
     public void delayNext()
     {
         StartCoroutine(DelayAction());
