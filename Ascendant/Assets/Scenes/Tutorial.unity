@@ -2001,6 +2001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3c617833fa1a3468109094a2c7a35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCam: {fileID: 1668084743}
+  worldSpaceCanvas: {fileID: 571402894}
   offset: {x: 0, y: 4, z: 0}
 --- !u!4 &162248974 stripped
 Transform:
@@ -5055,12 +5057,12 @@ GameObject:
   - component: {fileID: 571402892}
   - component: {fileID: 571402891}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: TutorialCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &571402891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5135,7 +5137,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7119,7 +7121,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &776057674
 MonoBehaviour:
@@ -8148,6 +8150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3c617833fa1a3468109094a2c7a35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
+  worldSpaceCanvas: {fileID: 0}
   offset: {x: 0, y: 4, z: 0}
 --- !u!114 &926559103
 MonoBehaviour:
@@ -8999,6 +9003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3c617833fa1a3468109094a2c7a35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCam: {fileID: 1668084743}
+  worldSpaceCanvas: {fileID: 571402894}
   offset: {x: 0, y: 4, z: 0}
 --- !u!114 &1000914489
 MonoBehaviour:
@@ -10390,7 +10396,7 @@ RectTransform:
   - {fileID: 1479802059}
   - {fileID: 1313744752}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11496,6 +11502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3c617833fa1a3468109094a2c7a35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
+  worldSpaceCanvas: {fileID: 0}
   offset: {x: 0, y: 2, z: 0}
 --- !u!114 &1270631397
 MonoBehaviour:
@@ -13386,6 +13394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3c617833fa1a3468109094a2c7a35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCam: {fileID: 1668084743}
+  worldSpaceCanvas: {fileID: 571402894}
   offset: {x: 0, y: 4, z: 0}
 --- !u!114 &1421910388
 MonoBehaviour:
@@ -14942,6 +14952,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08fb5651122c8ac4088b05eead8685f3, type: 3}
+--- !u!4 &1668084743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8199369906196410365, guid: 23847c727408e584a856c5915bf32b1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1946405547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1673684683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17896,6 +17912,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3c617833fa1a3468109094a2c7a35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCam: {fileID: 1668084743}
+  worldSpaceCanvas: {fileID: 571402894}
   offset: {x: 0, y: 4, z: 0}
 --- !u!114 &2072535171
 MonoBehaviour:
