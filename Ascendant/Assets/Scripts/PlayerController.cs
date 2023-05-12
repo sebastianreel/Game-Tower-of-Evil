@@ -30,6 +30,10 @@ public class PlayerController : MonoBehaviour
     private int maxJumps = 2;
     [SerializeField]
     private Camera mCamera;
+    [SerializeField]
+    private AudioSource source;
+    [SerializeField]
+    private AudioClip clip;
     #endregion
 
     #region Private variables
@@ -80,6 +84,7 @@ public class PlayerController : MonoBehaviour
         {
             numJumps ++;
             velocity += jumpPower;
+            playJumpClip();
         }
     }
 
@@ -134,6 +139,14 @@ public class PlayerController : MonoBehaviour
                 numJumps = 0;
                 particle.Play();
             }
+        }
+    }
+
+    private void playJumpClip()
+    {
+        if (source != null && clip != null)
+        {
+            source.PlayOneShot(clip);
         }
     }
     #endregion
