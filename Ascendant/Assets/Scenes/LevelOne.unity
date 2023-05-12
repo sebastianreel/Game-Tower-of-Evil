@@ -6467,7 +6467,7 @@ MonoBehaviour:
   sounds:
   - name: spike_trap
     clip: {fileID: 8300000, guid: f5039084b96f6f2439f0a0fac6a7df61, type: 3}
-    volume: 0.5
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -6476,6 +6476,12 @@ MonoBehaviour:
     volume: 0.134
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: Cut
+    clip: {fileID: 8300000, guid: 226e819fb3c82924fb1b76cbc2507dec, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!1001 &446555193
 PrefabInstance:
@@ -17851,14 +17857,28 @@ Transform:
   - {fileID: 73231993}
   - {fileID: 2045201048}
   - {fileID: 973860651}
+  - {fileID: 713550692}
+  - {fileID: 189820484}
+  - {fileID: 790389483}
+  - {fileID: 1789311398}
+  - {fileID: 1565189779}
+  - {fileID: 1769700197}
+  - {fileID: 683460343}
+  - {fileID: 1921024826}
+  - {fileID: 374789778}
+  - {fileID: 2131822882}
+  - {fileID: 302254844}
+  - {fileID: 1916890382}
   - {fileID: 280867093}
   - {fileID: 432537683}
+  - {fileID: 1935288065}
   - {fileID: 1500432413}
   - {fileID: 1525523797}
   - {fileID: 252167814}
-  - {fileID: 1935288065}
+  - {fileID: 1757096029}
   - {fileID: 703919590}
   - {fileID: 7204455}
+  - {fileID: 2135015460}
   - {fileID: 1099741977}
   - {fileID: 28273119}
   - {fileID: 1104094733}
@@ -17874,20 +17894,6 @@ Transform:
   - {fileID: 1489309278}
   - {fileID: 1662510696}
   - {fileID: 1502198265}
-  - {fileID: 1769700197}
-  - {fileID: 683460343}
-  - {fileID: 374789778}
-  - {fileID: 302254844}
-  - {fileID: 2131822882}
-  - {fileID: 713550692}
-  - {fileID: 1789311398}
-  - {fileID: 1921024826}
-  - {fileID: 1916890382}
-  - {fileID: 1757096029}
-  - {fileID: 1565189779}
-  - {fileID: 790389483}
-  - {fileID: 2135015460}
-  - {fileID: 189820484}
   m_Father: {fileID: 1486390867}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

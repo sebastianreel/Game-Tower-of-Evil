@@ -21,7 +21,7 @@ public class SpikeTrap : MonoBehaviour
 
     public int damage;
     public PlayerHealth playerHealth;
-    private int time = 500;
+    private int time = 0;
     private bool trigger;
 
     private void Awake(){
@@ -43,7 +43,7 @@ public class SpikeTrap : MonoBehaviour
         
 
         time = time - 1;
-        Debug.Log (time);
+        // Debug.Log (time);
             
     }
 
@@ -61,8 +61,9 @@ public class SpikeTrap : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collision){
         if(collision.tag == "Player" && time <= 0){
+            FindObjectOfType<AudioManager>().Play("Cut");
             playerHealth.TakeDamage(damage);
-            time = 500;
+            time = 200;
         }
     }
     private void ReturnStartPoint()
