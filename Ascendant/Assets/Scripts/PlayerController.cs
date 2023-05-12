@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Public variables
+    public ParticleSystem particle;
     #endregion
 
     #region Unity Functions
@@ -131,6 +132,7 @@ public class PlayerController : MonoBehaviour
             if (CC.isGrounded)
             {
                 numJumps = 0;
+                particle.Play();
             }
         }
     }
