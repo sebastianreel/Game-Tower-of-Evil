@@ -8,6 +8,5 @@ public class CursorHide : MonoBehaviour
     void Start()
     {
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 }
