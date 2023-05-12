@@ -1,4 +1,4 @@
-# CS 328: Final Game - "Tower of Evil"
+# CS 328: Final Game - "Ascendant"
 
 # Controls
 	# Keyboard
