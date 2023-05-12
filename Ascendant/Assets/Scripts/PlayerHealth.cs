@@ -51,7 +51,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         if(currentHealth <= 0){
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("PlayerDied");
         }
 
         durationTimer = 0;
