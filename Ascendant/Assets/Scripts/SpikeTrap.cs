@@ -43,10 +43,6 @@ public class SpikeTrap : MonoBehaviour
         
 
         time = time - 1;
-<<<<<<< Updated upstream
-        // Debug.Log (time);
-=======
->>>>>>> Stashed changes
             
     }
 
