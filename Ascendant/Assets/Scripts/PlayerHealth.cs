@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
+<<<<<<< Updated upstream
     // Update is called once per frame
     void Update()
     {
@@ -40,15 +41,21 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+=======
+>>>>>>> Stashed changes
     public void TakeDamage(int damage){
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         if(currentHealth <= 0){
             SceneManager.LoadScene("MainMenu");
         }
+<<<<<<< Updated upstream
 
         durationTimer = 0;
         damageOvelay.color = new Color(damageOvelay.color.r, damageOvelay.color.g, damageOvelay.color.b, 1);
+=======
+        Debug.Log("Player takes: " + damage);
+>>>>>>> Stashed changes
     }
 
 

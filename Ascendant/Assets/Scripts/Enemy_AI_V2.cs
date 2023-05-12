@@ -10,8 +10,6 @@ using UnityEngine.AI;
 public class Enemy_AI_V2 : MonoBehaviour
 {
     #region private variables
-    private EnemyRef reference;
-    private Animator animator;
     private float attackDistance;
     private float pathUpdateDeadline;
     private bool inRange = false;
@@ -25,13 +23,11 @@ public class Enemy_AI_V2 : MonoBehaviour
     private float attackDelay = 10;
     [SerializeField]
     private float attackTime = 10;
+    [SerializeField]
+    private EnemyRef reference;
+    [SerializeField]
+    private Animator animator;
     #endregion
-
-    private void Awake()
-    {
-        reference= GetComponent<EnemyRef>();
-        animator = GetComponent<Animator>();
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -84,7 +80,7 @@ public class Enemy_AI_V2 : MonoBehaviour
     {
         if (Time.time >= pathUpdateDeadline)
         {
-            Debug.Log("Updating Path");
+            //Debug.Log("Updating Path");
             pathUpdateDeadline = Time.time + reference.pathUpdateDelay;
             reference.navMeshagent.SetDestination(target.position);
         }
