@@ -39,6 +39,8 @@ public class PauseManager : MonoBehaviour
     #region unity functions
     private void Start()
     {
+        Cursor.visible = true;
+
         resume.onClick.AddListener(ResumeButtonClicked);
         mainMenu.onClick.AddListener(mainMenuButtonClicked);
         controls.onClick.AddListener(controlsButtonClicked);
