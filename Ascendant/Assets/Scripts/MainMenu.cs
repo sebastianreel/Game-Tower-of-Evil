@@ -32,6 +32,8 @@ public class MainMenu : MonoBehaviour
     #region Unity Functions
     private void Start()
     {
+        Cursor.visible = true;
+
         startButton.onClick.AddListener(startButtonClicked);
         optionsButton.onClick.AddListener(optionsButtonClicked);
         controlsButton.onClick.AddListener(controlsButtonClicked);
