@@ -4,6 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField]
+    private AudioClip clip;
+    [SerializeField]
+    private AudioSource source;
+
+
     public int maxHealth = 100;
     public int currentHealth;
     
@@ -41,6 +47,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void TakeDamage(int damage){
+        playOneDamageClip();
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         if(currentHealth <= 0){
@@ -49,7 +56,16 @@ public class PlayerHealth : MonoBehaviour
 
         durationTimer = 0;
         damageOvelay.color = new Color(damageOvelay.color.r, damageOvelay.color.g, damageOvelay.color.b, 1);
+
         Debug.Log("Player takes: " + damage);
+    }
+
+    private void playOneDamageClip()
+    {
+        if (source != null && clip != null)
+        {
+            source.PlayOneShot(clip);
+        }
     }
 
 
